@@ -1121,13 +1121,13 @@
     ts-node "^9"
     tslib "^2"
 
-"@graphql-codegen/cli@1.21.2":
-  version "1.21.2"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/cli/-/cli-1.21.2.tgz#2b65acff441f6cbae24bb816790a074264b58f86"
-  integrity sha512-Jt1sJzTD1/0PZ4JIgZZgswTNu+LxJBS706rOo4ol5NsjkD3Wzk3cUvZsBUYTrYc9Zh6XArZzRm5EBLImLRjHlQ==
+"@graphql-codegen/cli@^1.21.3":
+  version "1.21.3"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/cli/-/cli-1.21.3.tgz#3506c5d019c6995be1927bd4d9c67a739fafe5e6"
+  integrity sha512-jwg0mKhseg0QI4/T4IQcttTBCZgnahiTWqnYWIK+E8nrbXCE9o2hxvaYin/Kq9+5oFtxDePED56cjVs/ESRw6g==
   dependencies:
     "@graphql-codegen/core" "1.17.9"
-    "@graphql-codegen/plugin-helpers" "^1.18.3"
+    "@graphql-codegen/plugin-helpers" "^1.18.4"
     "@graphql-tools/apollo-engine-loader" "^6"
     "@graphql-tools/code-file-loader" "^6"
     "@graphql-tools/git-loader" "^6"
@@ -1140,7 +1140,7 @@
     "@graphql-tools/utils" "^7.0.0"
     ansi-escapes "^4.3.1"
     chalk "^4.1.0"
-    change-case-all "^1.0.12"
+    change-case-all "1.0.12"
     chokidar "^3.4.3"
     common-tags "^1.8.0"
     cosmiconfig "^7.0.0"
@@ -1181,6 +1181,17 @@
   version "1.18.3"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.18.3.tgz#607a8bc16d80b30d59cd07d70de2ba803b57bc4a"
   integrity sha512-+LVxWFlcZW+FB32CyvkdaMN/tIMajO42pCg0Cy8Z8ZZtGutXW1w6UggrvrEUzMZc9GHZQe49q+w7QQxeooaIlA==
+  dependencies:
+    "@graphql-tools/utils" "^7.0.0"
+    common-tags "1.8.0"
+    import-from "3.0.0"
+    lodash "~4.17.20"
+    tslib "~2.1.0"
+
+"@graphql-codegen/plugin-helpers@^1.18.4":
+  version "1.18.4"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.18.4.tgz#0adc4c0f88386a50b7a69d358080b6ee54fc3b16"
+  integrity sha512-dpfhUmn9GOS8ByoOPIN3V4Nn9HX7sl9NR7Hf26TgN6Clg7cQvkT6XjHdS2e56Q3kWrxZT1zJ1sEa67D3tj9ZtQ==
   dependencies:
     "@graphql-tools/utils" "^7.0.0"
     common-tags "1.8.0"
@@ -2241,7 +2252,7 @@ chalk@^4.0.0, chalk@^4.1.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-change-case-all@^1.0.12:
+change-case-all@1.0.12, change-case-all@^1.0.12:
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/change-case-all/-/change-case-all-1.0.12.tgz#ae3e0faf5e610e8e25c5d5eaa4a6d5c2f1d68797"
   integrity sha512-zdQus7R0lkprF99lrWUC5bFj6Nog4Xt4YCEjQ/vM4vbc6b5JHFBQMxRPAjfx+HJH8WxMzH0E+lQ8yQJLgmPCBg==
@@ -3659,6 +3670,14 @@ isomorphic-fetch@^3.0.0:
     node-fetch "^2.6.1"
     whatwg-fetch "^3.4.1"
 
+isomorphic-unfetch@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/isomorphic-unfetch/-/isomorphic-unfetch-3.1.0.tgz#87341d5f4f7b63843d468438128cb087b7c3e98f"
+  integrity sha512-geDJjpoZ8N0kWexiwkX8F9NkTsXhetLPVbZFQ+JTW239QNOwvB0gniuR1Wc6f0AMTn7/mFGyXvHTifrCp/GH8Q==
+  dependencies:
+    node-fetch "^2.6.1"
+    unfetch "^4.2.0"
+
 isomorphic-ws@4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/isomorphic-ws/-/isomorphic-ws-4.0.1.tgz#55fd4cd6c5e6491e76dc125938dd863f5cd4f2dc"
@@ -4110,6 +4129,13 @@ native-url@0.3.4:
   integrity sha512-6iM8R99ze45ivyH8vybJ7X0yekIcPf5GgLV5K0ENCbmRcaRIDoj37BC8iLEmaaBfqqb8enuZ5p0uhY+lVAbAcA==
   dependencies:
     querystring "^0.2.0"
+
+next-urql@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/next-urql/-/next-urql-3.0.0.tgz#b3c2d1306c3f8826b342a9c39f282de4bf45ae74"
+  integrity sha512-7sT5jLo7XqdVDRP43oo3KJf1c49cnytTcVXIiPuZInfUt5wL4Mri/33MbCF0dFFKNeYE3LluGrKV55uR7sNAWA==
+  dependencies:
+    react-ssr-prepass "^1.2.1"
 
 next@latest:
   version "10.0.8"
@@ -4695,6 +4721,11 @@ react-is@16.13.1, react-is@^16.7.0, react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-is@^17.0.1:
+  version "17.0.1"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
+  integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
+
 react-refresh@0.8.3:
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
@@ -4718,6 +4749,11 @@ react-remove-scroll@2.4.1:
     tslib "^1.0.0"
     use-callback-ref "^1.2.3"
     use-sidecar "^1.0.1"
+
+react-ssr-prepass@^1.2.1:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/react-ssr-prepass/-/react-ssr-prepass-1.3.0.tgz#6b6b1193b6d8b750c3674c20b58bc3ee7e75deac"
+  integrity sha512-BshcTNrfDrAiVFMm6PSj7d/LlE1LoLajMxvsbZtqqSY3xTOkt8dCs66xG+RljpZ6QyAJzKTbH4ObbhgUEe6G8A==
 
 react-style-singleton@^2.1.0:
   version "2.1.1"
@@ -5460,6 +5496,11 @@ unc-path-regex@^0.1.2:
   resolved "https://registry.yarnpkg.com/unc-path-regex/-/unc-path-regex-0.1.2.tgz#e73dd3d7b0d7c5ed86fbac6b0ae7d8c6a69d50fa"
   integrity sha1-5z3T17DXxe2G+6xrCufYxqadUPo=
 
+unfetch@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/unfetch/-/unfetch-4.2.0.tgz#7e21b0ef7d363d8d9af0fb929a5555f6ef97a3be"
+  integrity sha512-F9p7yYCn6cIW9El1zi0HI6vqpeIvBsr3dSuRO6Xuppb1u5rXpCPmMvLSyECLhybr9isec8Ohl0hPekMVrEinDA==
+
 unixify@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/unixify/-/unixify-1.0.0.tgz#3a641c8c2ffbce4da683a5c70f03a462940c2090"
@@ -5562,6 +5603,11 @@ util@^0.11.0:
   integrity sha512-HShAsny+zS2TZfaXxD9tYj4HQGlBezXZMZuM/S5PKLLoZkShZiGk9o5CzukI1LVHZvjdvZ2Sj1aW/Ndn2NB/HQ==
   dependencies:
     inherits "2.0.3"
+
+uui@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/uui/-/uui-1.0.7.tgz#283eab026f323a00f333e1dbcf93ce1a41a47782"
+  integrity sha512-k9l6kxVMwk02dy9axYYay5dWVF+3jfBcVpgJUj09WIcp4JSHM3JPdlcpicFTWUYryZGKryxSkS0xhtUSn2xAnw==
 
 valid-url@1.0.9, valid-url@^1.0.9:
   version "1.0.9"
