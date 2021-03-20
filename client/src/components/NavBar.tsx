@@ -46,7 +46,7 @@ const NavBar = ({}: NavBarProps) => {
     );
   }
   return (
-    <Flex bg="twitter.500" p={5}>
+    <Flex position="sticky" top={0} zIndex={1} bg="twitter.500" p={5}>
       <Box ml={'auto'}>{body}</Box>
     </Flex>
   );
